@@ -2,6 +2,8 @@
 
 This is a simple Flask application that demonstrates how to use LaunchDarkly to switch between dark mode and light mode based on a feature flag. The application uses the LaunchDarkly Python SDK to evaluate the feature flag for a given user context.
 
+https://github.com/ajot/flask-launchdarkly-hello-world-light-mode-dark-mode/assets/1119433/ea800540-0b30-4702-bef8-e24c96515b58
+
 ## Getting Started
 
 ### Prerequisites
