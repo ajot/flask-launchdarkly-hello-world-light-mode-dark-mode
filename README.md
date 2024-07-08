@@ -18,7 +18,7 @@ Before you begin, ensure you have the following:
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/yourusername/flask-launchdarkly-hello-world-light-mode-dark-mode.git
+    git clone https://github.com/ajot/flask-launchdarkly-hello-world-light-mode-dark-mode.git
     cd flask-launchdarkly-hello-world-light-mode-dark-mode
     ```
 
@@ -45,6 +45,30 @@ Before you begin, ensure you have the following:
     LAUNCHDARKLY_API_KEY=your_launchdarkly_sdk_key
     FLASK_RUN_PORT=3000
     ```
+### Creating the Feature Flag in LaunchDarkly
+
+![](/assets/CleanShot-2024-07-08-22-51-58@2x.png)
+
+1. **Log in to your LaunchDarkly account.**
+2. **Navigate to your project and environment where you want to create the feature flag.**
+3. **Create a new feature flag:**
+   - Click on the **Feature flags** tab.
+   - Click **+ New flag**.
+   - Enter **Flag key** as `dark-mode`.
+   - Set **Flag name** as `Dark Mode`.
+   - Add a description if you'd like.
+   - Click **Save flag**.
+
+4. **Configure the flag variations:**
+   - By default, LaunchDarkly sets up boolean flags with `true` and `false` variations. Ensure that `true` represents dark mode and `false` represents light mode.
+
+5. **Create a custom rule:**
+   - Go to the flag configuration page.
+   - Click on **+ Add rule**.
+   - Select **Custom rule**.
+   - Define the custom rule based on your requirements (e.g., targeting specific user emails or segments).
+
+![](/assets/CleanShot-2024-07-04-00-26-41@2x.png)
 
 ### HTML Templates
 
